@@ -10,8 +10,6 @@ import (
 
 type Contact struct {
     Name string
-    Email string
-    Phone string
     Location string
 }
 
@@ -38,8 +36,6 @@ type Education struct {
 func main() {
     m2 := Contact{
         "Marcus Montgomery",
-        "grapeofwrath@pm.me",
-        "360-850-5204",
         "Lebanon, TN",
     }
 
@@ -107,7 +103,7 @@ func main() {
 
     in := `# `+m2.Name+`
 
-`+m2.Location+` | `+m2.Phone+` | `+m2.Email+`
+`+m2.Location+`
 
 ---
 
